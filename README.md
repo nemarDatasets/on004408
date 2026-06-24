@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004408-blue)](https://doi.org/10.82901/nemar.on004408)
+
 The data in one study [^1] and then added to by another [^2] and contains EEG responses of healthy, neurotypical adults who listened to naturalistic speech. The subjects listened to segments from an audio book version of "The Old Man and the Sea" and their brain activity was recorded using a 128-channel ActiveTwo EEG system (BioSemi). 
 
 The stimuli folder contains .wav files of the presented audiobook segments as well as a .TextGrid file for each segment, containng the timing of  words and phonemes in that segment. The text grids were generated using the forced-alignment software Prosodylab-Aligner [^3] and inspected by eye. Each subject's folder contains one EEG-recording per audio segment and their starts are aligned (the EEG recordings are longer than the audio to a varying extent).  The recordings are unfiltered, unreferenced and sampled at 512 Hz.
