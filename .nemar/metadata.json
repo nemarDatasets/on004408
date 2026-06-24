@@ -1,30 +1,100 @@
 {
   "version": "2.0",
-  "dataset_id": "on004408",
-  "source": "openneuro",
-  "source_id": "ds004408",
+  "pipeline_stage": "validated",
   "title": "EEG responses to continuous naturalistic speech\n",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Giovanni M Di Liberto": {},
     "Michael P Broderick": {},
     "Ole Bialas": {},
     "Edmund C Lalor": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004408.v1.0.8",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004408",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004408",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.cub.2015.08.035",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.cub.2018.01.080",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".TextGrid",
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".wav"
+  ],
+  "description": "This dataset comprises EEG recordings from healthy adults listening to naturalistic continuous speech from an audiobook, collected across two complementary studies. Brain activity was recorded using a 128-channel EEG system while subjects listened to segments from \"The Old Man and the Sea,\" with concurrent phoneme and word-level timing annotations. The dataset supports investigation of cortical responses to naturalistic speech processing at multiple linguistic levels, including phoneme-level processing and semantic comprehension of narrative speech.",
+  "methods_description": "EEG data were recorded using a 128-channel ActiveTwo system (BioSemi) at 512 Hz sampling rate in unfiltered, unreferenced format. Stimuli consisted of audiobook segments with corresponding TextGrid files containing word and phoneme timing information generated using forced-alignment software (Prosodylab-Aligner) and verified by visual inspection.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "speech perception"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "cortical entrainment"
+    },
+    {
+      "term": "phoneme processing"
+    },
+    {
+      "term": "neural encoding"
+    },
+    {
+      "term": "audiobook"
+    },
+    {
+      "term": "continuous speech"
+    },
+    {
+      "term": "forced-alignment"
+    },
+    {
+      "term": "TextGrid"
+    },
+    {
+      "term": "BioSemi"
+    },
+    {
+      "term": "ActiveTwo"
+    }
+  ],
+  "source_hash": "4e6c77059736ecec75afa3f4bdf62b01c43f2b70b0cb3b26bad0a02bc30b4ca0"
 }
