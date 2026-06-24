@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG responses to continuous naturalistic speech\n",
+  "description": "This dataset comprises EEG recordings from healthy adults listening to naturalistic speech segments from an audiobook. Brain activity was recorded using a 128-channel ActiveTwo EEG system while subjects listened to passages from \"The Old Man and the Sea,\" with concurrent phoneme and word-level timing annotations. The unfiltered, unreferenced recordings sampled at 512 Hz provide raw neural responses to continuous speech stimuli, enabling investigation of cortical entrainment and semantic processing mechanisms.",
+  "methods_description": "EEG data were acquired using a 128-channel ActiveTwo system (BioSemi) at 512 Hz sampling rate. Subjects listened to audio segments from an audiobook while brain activity was recorded. Stimuli included .wav files and TextGrid files containing word and phoneme timing information generated using Prosodylab-Aligner forced-alignment software and verified by visual inspection. Recordings were unfiltered and unreferenced.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,32 @@
     "Ole Bialas": {},
     "Edmund C Lalor": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004408.v1.0.8",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "Speech Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
+    },
+    {
+      "term": "cortical entrainment"
+    },
+    {
+      "term": "naturalistic speech"
+    },
+    {
+      "term": "phoneme processing"
+    },
+    {
+      "term": "semantic comprehension"
+    },
+    {
+      "term": "neural oscillations"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004408",
       "identifier_type": "URL",
@@ -35,15 +57,20 @@
       "identifier": "10.1016/j.cub.2018.01.080",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004408.v1.0.8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "20.1 GB (1182 files)"
   ],
   "formats": [
     ".TextGrid",
@@ -54,47 +81,8 @@
     ".txt",
     ".vhdr",
     ".vmrk",
-    ".wav"
+    ".wav",
+    ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from healthy adults listening to naturalistic continuous speech from an audiobook, collected across two complementary studies. Brain activity was recorded using a 128-channel EEG system while subjects listened to segments from \"The Old Man and the Sea,\" with concurrent phoneme and word-level timing annotations. The dataset supports investigation of cortical responses to naturalistic speech processing at multiple linguistic levels, including phoneme-level processing and semantic comprehension of narrative speech.",
-  "methods_description": "EEG data were recorded using a 128-channel ActiveTwo system (BioSemi) at 512 Hz sampling rate in unfiltered, unreferenced format. Stimuli consisted of audiobook segments with corresponding TextGrid files containing word and phoneme timing information generated using forced-alignment software (Prosodylab-Aligner) and verified by visual inspection.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "speech perception"
-    },
-    {
-      "term": "naturalistic stimuli"
-    },
-    {
-      "term": "cortical entrainment"
-    },
-    {
-      "term": "phoneme processing"
-    },
-    {
-      "term": "neural encoding"
-    },
-    {
-      "term": "audiobook"
-    },
-    {
-      "term": "continuous speech"
-    },
-    {
-      "term": "forced-alignment"
-    },
-    {
-      "term": "TextGrid"
-    },
-    {
-      "term": "BioSemi"
-    },
-    {
-      "term": "ActiveTwo"
-    }
-  ],
-  "source_hash": "4e6c77059736ecec75afa3f4bdf62b01c43f2b70b0cb3b26bad0a02bc30b4ca0"
+  "source_hash": "194e54350211d38592a7405f30d270a837976dad1d8cb98a05c653a886625ae3"
 }
