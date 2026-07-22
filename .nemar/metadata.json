@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG responses to continuous naturalistic speech\n",
-  "description": "This dataset comprises EEG recordings from healthy adults listening to naturalistic continuous speech from an audiobook. Brain activity was recorded using a 128-channel ActiveTwo EEG system while subjects listened to segments from \"The Old Man and the Sea,\" with concurrent linguistic annotations including word and phoneme timing. The dataset supports investigation of cortical responses to naturalistic speech and phoneme-level processing mechanisms.",
-  "methods_description": "EEG data were acquired using a 128-channel ActiveTwo system (BioSemi) at 512 Hz sampling rate. Recordings were unfiltered and unreferenced. Linguistic stimuli consisted of audiobook segments with forced-alignment annotations (word and phoneme timing) generated using Prosodylab-Aligner software and verified by visual inspection.",
+  "description": "This dataset comprises EEG recordings from healthy adults listening to naturalistic speech segments from an audiobook. Brain activity was recorded using a 128-channel ActiveTwo EEG system while subjects listened to passages from \"The Old Man and the Sea,\" with concurrent phoneme and word-level timing annotations. The unfiltered, unreferenced recordings sampled at 512 Hz provide raw neural responses to continuous speech stimuli for investigating cortical entrainment and speech comprehension mechanisms.",
+  "methods_description": "EEG data were acquired using a 128-channel ActiveTwo system (BioSemi) at 512 Hz sampling rate. Subjects listened to audio segments from an audiobook, with stimulus timing information provided through TextGrid files containing word and phoneme boundaries generated via forced-alignment using Prosodylab-Aligner software. Recordings were kept unfiltered and unreferenced.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,29 +17,29 @@
       "term": "EEG"
     },
     {
-      "term": "speech perception"
+      "term": "Speech Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
     },
     {
       "term": "cortical entrainment"
     },
     {
-      "term": "naturalistic stimuli"
+      "term": "naturalistic speech"
     },
     {
       "term": "phoneme processing"
     },
     {
-      "term": "neural encoding"
+      "term": "neural responses"
+    },
+    {
+      "term": "audiobook stimuli"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004408",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004408",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -57,6 +57,11 @@
       "identifier": "10.18112/openneuro.ds004408.v1.0.8",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004408",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
