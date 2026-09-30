@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG responses to continuous naturalistic speech\n",
-  "description": "This dataset comprises 128-channel EEG recordings from healthy, neurotypical adults listening to naturalistic speech segments from an audiobook version of 'The Old Man and the Sea'. The data were originally collected across two studies investigating cortical entrainment to speech and semantic processing during continuous narrative listening. Accompanying audio stimuli and forced-aligned phoneme/word timing annotations are included to support neurolinguistic analyses.",
-  "methods_description": "EEG was recorded using a 128-channel BioSemi ActiveTwo system at a sampling rate of 512 Hz while participants listened to segments of an audiobook. Recordings are unfiltered and unreferenced, with each subject's EEG segment start aligned to the corresponding audio stimulus. Word and phoneme timing annotations were generated using the Prosodylab-Aligner forced-alignment software and manually inspected.",
+  "description": "This dataset contains 128-channel EEG recordings from healthy, neurotypical adults listening to naturalistic continuous speech, specifically segments of an audiobook version of \"The Old Man and the Sea\". It combines data from two earlier studies on cortical entrainment to speech and on semantic processing. It includes the audio stimuli and forced-aligned word and phoneme timing files, supporting research on speech and language processing.",
+  "methods_description": "EEG was recorded with a 128-channel BioSemi ActiveTwo system at 512 Hz. Recordings are unfiltered and unreferenced, with one recording per audiobook segment. Recording starts are aligned to the audio onset, and the recordings extend beyond the audio to a varying extent. Word and phoneme timings in the stimulus TextGrid files were generated with the Prosodylab-Aligner forced aligner and inspected by eye.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,18 +20,18 @@
       "term": "naturalistic speech"
     },
     {
+      "term": "continuous speech"
+    },
+    {
+      "term": "audiobook"
+    },
+    {
+      "term": "phoneme processing"
+    },
+    {
       "term": "Speech Perception",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
-    },
-    {
-      "term": "cortical entrainment"
-    },
-    {
-      "term": "auditory comprehension"
-    },
-    {
-      "term": "forced alignment"
     }
   ],
   "related_identifiers": [
@@ -57,7 +57,7 @@
     "eeg"
   ],
   "sizes": [
-    "20.1 GB (1182 files)"
+    "18.70 GB (1182 files)"
   ],
   "formats": [
     ".TextGrid",
